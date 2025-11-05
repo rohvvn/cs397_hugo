@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <section>
+    {{ with .Content }}
+      <div class="content">{{ . }}</div>
+    {{ else }}
+      <p>Welcome to {{ .Site.Title }}.</p>
+    {{ end }}
+  </section>
+{{ end }}
+

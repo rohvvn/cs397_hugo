@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --panel: #111111;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --gold: #ffb612;
+        --link: #facc15;
+        --maxw: 1100px;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+      a { color: var(--link); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 1rem; }
+      header { background: linear-gradient(90deg, var(--panel), #151515); border-bottom: 3px solid var(--gold); }
+      header .bar { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; gap: 1rem; }
+      .brand { display: flex; align-items: baseline; gap: .5rem; }
+      .brand a { color: var(--text); font-weight: 800; letter-spacing: .2px; }
+      nav ul { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; flex-wrap: wrap; }
+      nav a { padding: .4rem .7rem; border-radius: 6px; color: var(--text); }
+      nav a:hover, nav .active { background: #1f1f1f; border: 1px solid #2a2a2a; }
+      main { padding: 2rem 0 3rem; }
+      article, section { background: var(--panel); border: 1px solid #1f2937; border-radius: 10px; padding: 1.25rem; }
+      h1, h2, h3 { line-height: 1.2; margin: .2rem 0 1rem; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.4rem; color: var(--gold); }
+      p, li { color: #e5e7eb; }
+      img { max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #1f2937; display: block; margin: 1rem 0; }
+      footer { border-top: 1px solid #1f2937; color: var(--muted); font-size: .9rem; padding: 1rem 0 2rem; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container bar">
+        <div class="brand">
+          <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+        </div>
+        {{ with .Site.Menus.main }}
+        <nav>
+          <ul>
+            {{ range . }}
+              <li><a href="{{ .URL | relURL }}" class="{{ if .Page.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </nav>
+        {{ end }}
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </main>
+    <footer>
+      <div class="container">© {{ now.Year }} Pittsburgh Steelers Fan Site</div>
+    </footer>
+  </body>
+  </html>
+

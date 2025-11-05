@@ -1,7 +1,7 @@
-baseURL = '/'
+baseURL = 'https://rohvvn.github.io/cs397_hugo/'
 languageCode = 'en-us'
 title = 'Pittsburgh Steelers Fan Site'
-theme = 'ananke'
+theme = 'steelers'
 
 [params]
   description = 'A fan-made site for the Pittsburgh Steelers — team info and favorite players.'

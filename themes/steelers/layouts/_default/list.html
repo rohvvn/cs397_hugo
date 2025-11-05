@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <section>
+    <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}</h1>
+    {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+    {{ if not .IsHome }}
+      <ul>
+        {{ range .Pages }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </section>
+{{ end }}
+
