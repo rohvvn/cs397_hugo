@@ -1,0 +1,20 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Pittsburgh Steelers Fan Site'
+theme = 'ananke'
+
+[params]
+  description = 'A fan-made site for the Pittsburgh Steelers — team info and favorite players.'
+
+[menu]
+  [[menu.main]]
+    identifier = 'team'
+    name = 'Team Info'
+    url = '/team/'
+    weight = 1
+
+  [[menu.main]]
+    identifier = 'players'
+    name = 'Favorite Players'
+    url = '/players/'
+    weight = 2

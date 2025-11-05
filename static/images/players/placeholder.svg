@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .bg { fill: #E5E7EB; }
+      .frame { fill: none; stroke: #9CA3AF; stroke-width: 4; stroke-dasharray: 10 8; }
+      .text { fill: #374151; font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: bold; }
+      .sub  { fill: #4B5563; font-family: Arial, Helvetica, sans-serif; font-size: 18px; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="800" height="500" rx="8"/>
+  <rect class="frame" x="16" y="16" width="768" height="468" rx="8"/>
+  <g text-anchor="middle">
+    <text class="text" x="400" y="240">Player Photo Placeholder</text>
+    <text class="sub" x="400" y="275">Put an image at static/images/players/</text>
+  </g>
+  <g transform="translate(620,420)">
+    <circle cx="0" cy="0" r="18" fill="#111827"/>
+    <text x="0" y="6" font-size="16" text-anchor="middle" fill="#F9FAFB">PIT</text>
+  </g>
+  <g transform="translate(40,60)">
+    <rect x="0" y="0" width="180" height="28" rx="4" fill="#111827"/>
+    <text x="90" y="20" font-size="16" text-anchor="middle" fill="#F9FAFB">Black & Gold</text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:61892/categories/</loc>
+  </url><url>
+    <loc>//localhost:61892/</loc>
+  </url><url>
+    <loc>//localhost:61892/players/</loc>
+  </url><url>
+    <loc>//localhost:61892/team/</loc>
+  </url><url>
+    <loc>//localhost:61892/tags/</loc>
+  </url>
+</urlset>
