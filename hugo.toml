@@ -1,10 +1,18 @@
 baseURL = 'https://rohvvn.github.io/cs397_hugo/'
 languageCode = 'en-us'
 title = 'Pittsburgh Steelers Fan Site'
-theme = 'steelers'
+theme = 'PaperMod'
 
 [params]
   description = 'A fan-made site for the Pittsburgh Steelers — team info and favorite players.'
+
+  # PaperMod basics
+  defaultTheme = 'auto'
+  showReadingTime = true
+  showBreadCrumbs = true
+  disableThemeToggle = false
+  comments = false
+  showShareButtons = false
 
 [menu]
   [[menu.main]]
