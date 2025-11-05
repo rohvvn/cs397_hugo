@@ -22,18 +22,17 @@ All-time greats:
 Player gallery:
 
 ## Joe Greene
-![Joe Greene](/images/players/joe-greene.jpg)
-File used: `/images/players/joe-greene.jpg`
+![Joe Greene](images/players/joe-greene.jpg)
+File used: `images/players/joe-greene.jpg`
 
 ## Franco Harris
-![Franco Harris](/images/players/francoharris.jpg)
-File used: `/images/players/francoharris.jpg`
+![Franco Harris](images/players/francoharris.jpg)
+File used: `images/players/francoharris.jpg`
 
 ## Terry Bradshaw
-![Terry Bradshaw](/images/players/terry-bradshaw.jpg)
-File used: `/images/players/terry-bradshaw.jpg`
+![Terry Bradshaw](images/players/terry-bradshaw.jpg)
+File used: `images/players/terry-bradshaw.jpg`
 
 ## Jack Lambert
-![Jack Lambert](/images/players/jack-lambert.jpg)
-File used: `/images/players/jack-lambert.jpg`
-
+![Jack Lambert](images/players/jack-lambert.jpg)
+File used: `images/players/jack-lambert.jpg`
