@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://rohvvn.github.io/cs397_hugo/'
 languageCode = 'en-us'
 title = 'Pittsburgh Steelers Fan Site'
 theme = 'ananke'
